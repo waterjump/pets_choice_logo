@@ -47,7 +47,7 @@
       var foo, j, k, lightColor, newRow, octaveBands, ref1, ref2, sets, singleTerrain, x, xoff, yoff;
       xoff = p.sin(p.frameCount * 0.005) * 50;
       yoff = p.cos(p.frameCount * 0.005) * 50 - 100;
-      p.camera(0, -100, (p.height / 2.0) / p.tan(p.PI * 30.0 / 180.0), xoff, yoff, 0, 0, 1, 0);
+      p.camera(0, -100, (p.height / 2.0) / p.tan(p.PI * 30.0 / 180.0), xoff + 50, yoff, 0, 0, 1, 0);
       fft.analyze();
       p.background(30);
       p.strokeWeight(5);
